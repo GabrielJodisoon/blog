@@ -5,6 +5,10 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid $black-light;
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(6,9,15,.7);
+  backdrop-filter: blur(6px);
 }
 
 nav{
@@ -50,7 +54,9 @@ nav{
   position: absolute;
   top: 0;
   left: -100%;
-  background-color: $black-normal;
+  background-color:  rgba(6,9,15,.7);
+  z-index: 999;
+  backdrop-filter: blur(7px);
   transition: .8s ease;
 
   li{
